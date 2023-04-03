@@ -8,4 +8,4 @@ To use this template you must install:
 * [poetry](https://python-poetry.org/docs/)
 
 To build a python project with this template, simply run the following command:
-`cookiecutter https://github.com/MathieuMarauri/python-project-template`
+`cookiecutter https://github.com/MathieuMarauri/data-analysis-python-project-template`
