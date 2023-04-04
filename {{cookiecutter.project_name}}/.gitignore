@@ -6,3 +6,11 @@
 
 # Poetry lock file
 poetry.lock
+
+# Data folder
+data/*
+!data/.gitkeep 
+
+# Output folder
+output/*
+!output/.gitkeep 
