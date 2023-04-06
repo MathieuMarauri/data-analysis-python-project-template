@@ -1,11 +1,7 @@
 import os
-import subprocess
 
-print("Installing the dependencies ...")
-subprocess.call(["make", "install"])
-
-print("Initializing a git repo ...")
-subprocess.call(["git", "init"])
-subprocess.call(["git", "add", "*"])
-subprocess.call(["git", "commit", "-m", "Setup project"])
-subprocess.call(["pre-commit", "install"])
+os.system("make install")
+os.system("git init")
+os.system("git add .")
+os.system("git commit -m 'Setup project'")
+os.system("find . -type f -name '.gitkeep' -delete")
