@@ -9,8 +9,12 @@ poetry.lock
 
 # Data folder
 data/*
-!data/.gitkeep 
+!data/.gitkeep
 
 # Output folder
 output/*
-!output/.gitkeep 
+!output/.gitkeep
+
+# Docs folder
+docs/*
+!docs/.gitkeep
