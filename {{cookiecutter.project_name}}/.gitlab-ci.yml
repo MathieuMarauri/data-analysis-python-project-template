@@ -10,4 +10,4 @@ linter-job:
     - source `poetry env info --path`/bin/activate
   script:
     - python -m flake8
-    - nbqa flake8
+    - nbqa flake8 .
