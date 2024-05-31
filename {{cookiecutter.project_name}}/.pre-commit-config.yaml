@@ -1,12 +1,28 @@
 repos:
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+      - id: isort
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        language_version: python
   - repo: https://github.com/pycqa/flake8
     rev: 3.9.2
     hooks:
       - id: flake8
   - repo: https://github.com/nbQA-dev/nbQA
-  rev: 1.7.1
-  hooks:
-    - id: nbqa-black
-    - id: nbqa-isort
-      args: ["--float-to-top"]
-    - id: nbqa-flake8
+    rev: 1.7.1
+    hooks:
+      - id: nbqa-black
+      - id: nbqa-isort
+        args: ["--float-to-top"]
+      - id: nbqa-flake8
+  - repo: local
+    hooks:
+    - id: jupyter-nb-ensure-clean
+      name: jupyter-nb-ensure-clean
+      files: .ipynb
+      language: python_venv
+      entry: jupyter nbconvert --clear-output --inplace *.ipynb
