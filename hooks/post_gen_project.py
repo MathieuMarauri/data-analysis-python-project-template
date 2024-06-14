@@ -1,6 +1,6 @@
 import os
 
-python_version = "{{cookiecutter.python_version}}"
+python_version = "{{cookiecutter.python}}"
 
 os.system("pyenv local " + python_version)
 os.system("poetry self add poetry-plugin-up")
