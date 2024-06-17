@@ -3,6 +3,7 @@ import os
 python_version = "{{cookiecutter.python}}"
 
 os.system("pyenv local " + python_version)
+os.system("print ---------")
 os.system("poetry self add poetry-plugin-up")
 os.system("poetry up --latest")
 os.system("git init")
