@@ -3,7 +3,7 @@ stages:
 
 linter-job:
   stage: code-validation
-  image: python:latest
+  image: python:{{cookiecutter.python}}
   before_script:
     - pip install poetry
     - poetry install
