@@ -1,6 +1,17 @@
 stages:
   - code-validation
 
+# linter-job:
+#   stage: code-validation
+#   image: python:{{cookiecutter.python}}
+#   before_script:
+#     - pip install poetry
+#     - poetry install
+#     - source `poetry env info --path`/bin/activate
+#   script:
+#     - python -m flake8
+#     - nbqa flake8 .
+
 linter-job:
   stage: code-validation
   image: python:{{cookiecutter.python}}

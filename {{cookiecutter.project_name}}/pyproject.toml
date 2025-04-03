@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "{{cookiecutter.description}}"
 authors = ["{{cookiecutter.author}}"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "{{cookiecutter.python}}"
@@ -41,4 +42,4 @@ exclude = '''
 
 [tool.isort]
 # make it compatible with black
-profile = "black" 
+profile = "black"
